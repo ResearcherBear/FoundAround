@@ -16,11 +16,11 @@ const APTITUDE_UNLOCK_CODE = "101205";
 // Each `answer` is compared after trimming + lowercasing, so numbers or
 // short words both work fine.
 const questions = [
-  { text: "What is 15 + 27?", answer: "42" },
-  { text: "A train travels 60 km in 1 hour. How far does it travel in 3 hours (in km)?", answer: "180" },
-  { text: "What comes next in the series: 2, 4, 6, 8, ?", answer: "10" },
-  { text: "A dozen apples cost 24 rupees. What is the cost of one apple (in rupees)?", answer: "2" },
-  { text: "Which number is the odd one out: 3, 5, 7, 9, 10?", answer: "10" }
+  { text: "A takes 10 days to finish a job, and B takes 15. They work together for 2 days before A leaves. How many days will B take to finish the rest?", answer: "10" },
+  { text: "A mix of chickens and cows has 35 heads and 94 legs. After selling 5 chickens and 3 cows, how many legs remain?", answer: "72" },
+  { text: "What comes next in the series: 2, 6, 12, 20, 30, ?", answer: "42" },
+  { text: "What is the smallest positive number that leaves a remainder of 5 when divided by 7, and 3 when divided by 5?", answer: "33" },
+  { text: "A 5:3 milk-water mixture has 8 liters replaced with water, changing the ratio to 3:5. What was the initial total volume?", answer: "20" }
 ];
 
 const unlockPanel = document.getElementById("unlockPanel");
