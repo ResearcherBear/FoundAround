@@ -110,7 +110,7 @@ body {
 }
 
 .tile {
-  background-image: url('puzzle.jpg');
+  background-image: url('puzzle.png');
   background-size: 300% 300%;
   cursor: pointer;
   border: none;
