@@ -1,0 +1,4 @@
+# Keep your Firebase config out of the repo/commit history.
+# Copy firebase-config.example.js to firebase-config.js and fill in
+# your real values locally - firebase-config.js itself never gets committed.
+firebase-config.js

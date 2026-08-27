@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Pokemon Classic';
+  src: url('Pokemon Classic.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe23f;
+  font-family: 'Pokemon Classic', monospace;
+  color: #1a1a1a;
+  padding: 20px;
+}
+
+.screen {
+  width: 420px;
+  max-width: 100%;
+  min-height: 600px;
+  background: #fafcea;
+  border: 3px double #000;
+  padding: 16px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.pikachu-slot {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.pikachu-slot img,
+.pikachu-slot svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.title-box {
+  border: 3px double #000;
+  padding: 12px 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.title-box h1 {
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.panel {
+  border: 3px double #000;
+  padding: 12px;
+  background: #fff;
+}
+
+.panel.hidden {
+  display: none;
+}
+
+.panel-heading {
+  font-size: 9px;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+form label {
+  display: block;
+  font-size: 7px;
+  margin-bottom: 4px;
+}
+
+form input {
+  width: 100%;
+  padding: 9px 8px;
+  margin-bottom: 12px;
+  background: #d9d9d9;
+  border: 3px double #000;
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.start-btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 3px double #000;
+  font-family: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #FDFEED;
+}
+
+.start-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.dashboard-header .panel-heading {
+  margin: 0;
+  text-align: left;
+}
+
+.dashboard-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn {
+  font-family: inherit;
+  font-size: 8px;
+  padding: 6px 10px;
+  background: #fff;
+  border: 3px double #000;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #FDFEED;
+}
+
+.scholar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9px;
+}
+
+.scholar-table th,
+.scholar-table td {
+  border: 2px solid #000;
+  padding: 6px;
+  text-align: center;
+}
+
+.scholar-table thead th {
+  background: #ffe9a8;
+}
+
+.scholar-table tbody tr:nth-child(even) {
+  background: #FDFEED;
+}

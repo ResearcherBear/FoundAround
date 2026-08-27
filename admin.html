@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin - Scholar Registry</title>
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="screen">
+  <div class="pikachu-slot" id="pikachuSlot">
+    <img src="abcd.gif" alt="Description of the animation">
+  </div>
+  <div class="title-box">
+    <h1>Admin Dashboard</h1>
+  </div>
+
+  <!-- STATE 1: admin login (checked against Firebase Authentication) -->
+  <div class="panel" id="loginPanel">
+
+
+    <form id="adminLoginForm">
+      <label for="adminEmail">EMAIL</label>
+      <input type="email" id="adminEmail" name="adminEmail" autocomplete="off" required />
+
+      <label for="adminPassword">PASSWORD</label>
+      <input type="password" id="adminPassword" name="adminPassword" required />
+
+      <button type="submit" class="start-btn" id="adminLoginBtn">LOGIN</button>
+    </form>
+  </div>
+
+  <!-- STATE 2: dashboard - every scholar, sorted by score -->
+  <div class="panel hidden" id="dashboardPanel">
+    <div class="dashboard-header">
+      <p class="panel-heading">Scholars By Score</p>
+      <div class="dashboard-btns">
+        <button type="button" class="action-btn" id="refreshBtn">REFRESH</button>
+        <button type="button" class="action-btn" id="logoutBtn">LOGOUT</button>
+      </div>
+    </div>
+
+    <table class="scholar-table" id="scholarTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Scholar ID</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="scholarTableBody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
